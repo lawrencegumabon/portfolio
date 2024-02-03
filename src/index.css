@@ -3,3 +3,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  #contactMe {
+    position: relative;
+    animation: shake 600ms infinite ease-in-out;
+  }
+
+  @keyframes shake {
+    0% {
+      top: 0px;
+    }
+    100% {
+      top: 10px;
+    }
+  }
+}

@@ -1,40 +1,110 @@
-import React from "react";
+import React, { useState } from "react";
+import { Link } from "react-scroll";
 import { FaMoon } from "react-icons/fa";
 import { FaBars } from "react-icons/fa";
 import { FaTimes } from "react-icons/fa";
 
 const NavBar = () => {
-  return (
-    <div className="flex items-center justify-between py-6 px-8  fixed top-0 left-0 right-0 text-base md:text-lg">
-      <h1>Lawrence Gumabon</h1>
-      {/* FOR DESKTOP VIEW MENU */}
-      <ul className="hidden md:flex items-center gap-4 ">
-        <li>Home</li>
-        <li>Projects</li>
-        <li>Skills</li>
-        <li>Contact</li>
-        <li>
-          <FaMoon />
-        </li>
-      </ul>
+  const [nav, showNav] = useState(false);
+  const handleClick = () => showNav(!nav);
 
-      {/* FOR MOBILE VIEW MENU */}
-      <ul className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 hidden flex-col items-center text-xl gap-4 ">
-        <li>Home</li>
-        <li>Projects</li>
-        <li>Skills</li>
-        <li>Contact</li>
+  return (
+    <div className="flex items-center justify-between py-6 px-8  fixed top-0 left-0 right-0 text-base md:text-lg backdrop-blur-sm">
+      <Link to="home" smooth={true} offset={0} duration={500}>
+        <h1 className="text-lg font-semibold z-10 cursor-pointer">
+          Lawrence Gumabon
+        </h1>
+      </Link>
+      {/* FOR DESKTOP VIEW MENU */}
+      <ul className="hidden sm:flex items-center gap-4 cursor-pointer text-lg font-semibold">
         <li>
-          <FaMoon />
+          <Link to="home" smooth={true} offset={0} duration={500}>
+            <span className="flex items-center gap-2 hover:scale-105 duration-300">
+              {" "}
+              Home
+            </span>
+          </Link>
         </li>
+        <li>
+          <Link to="projects" smooth={true} offset={-80} duration={500}>
+            <span className="flex items-center gap-2 hover:scale-105 duration-300">
+              Projects
+            </span>
+          </Link>
+        </li>
+        <li>
+          <Link to="skills" smooth={true} duration={500}>
+            <span className="flex items-center gap-2 hover:scale-105 duration-300">
+              Skills
+            </span>
+          </Link>
+        </li>
+        <li>
+          <Link to="contacts" smooth={true} duration={500}>
+            <span className="flex items-center gap-2 hover:scale-105 duration-300">
+              Contacts
+            </span>
+          </Link>
+        </li>
+        {/* <li>
+          <FaMoon />
+        </li> */}
       </ul>
 
       {/* BURGER */}
-      <div className="sm:hidden">
-        <p>
-          <FaBars />
-        </p>
+      <div onClick={handleClick} className="sm:hidden z-10 cursor-pointer">
+        {!nav ? <FaBars /> : <FaTimes />}
       </div>
+
+      {/* FOR MOBILE VIEW MENU */}
+      <ul
+        className={
+          !nav
+            ? "hidden"
+            : "absolute inset-0 bg-light-0 flex flex-col justify-center items-center text-2xl gap-4 h-screen sm:hidden cursor-pointer"
+        }
+      >
+        <li>
+          <Link
+            onClick={handleClick}
+            to="home"
+            smooth={true}
+            offset={50}
+            duration={500}
+          >
+            <span className="flex items-center gap-2"> Home</span>
+          </Link>
+        </li>
+        <li>
+          <Link
+            onClick={handleClick}
+            to="projects"
+            smooth={true}
+            offset={-80}
+            duration={500}
+          >
+            <span className="flex items-center gap-2">Projects</span>
+          </Link>
+        </li>
+        <li>
+          <Link onClick={handleClick} to="skills" smooth={true} duration={500}>
+            <span className="flex items-center gap-2">Skills</span>
+          </Link>
+        </li>
+        <li>
+          <Link
+            onClick={handleClick}
+            to="contacts"
+            smooth={true}
+            duration={500}
+          >
+            <span className="flex items-center gap-2">Contact</span>
+          </Link>
+        </li>
+        {/* <li>
+          <FaMoon />
+        </li> */}
+      </ul>
     </div>
   );
 };
