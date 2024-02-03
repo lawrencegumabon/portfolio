@@ -1,4 +1,5 @@
 import React from "react";
+import Profile from "../assets/images/picture.png";
 import { Link } from "react-scroll";
 import { FaGithub } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
@@ -53,7 +54,7 @@ const Home = () => {
           </div>
 
           <img
-            src="src\assets\images\picture.PNG"
+            src={Profile}
             alt="Image"
             className="w-72 hover:rotate-6 duration-300"
           />
