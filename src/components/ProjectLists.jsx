@@ -4,6 +4,7 @@ import wheeltech from "../assets/images/wheeltech.png";
 import passwordmatrix from "../assets/images/passwordmatrix.png";
 import bookLibrary from "../assets/images/bookLibrary.png";
 import ecommerce from "../assets/images/e-commerce.png";
+import gymlarious from "../assets/images/gymlarious.png";
 import { FaHtml5 } from "react-icons/fa";
 import { FaCss3 } from "react-icons/fa";
 import { FaJs } from "react-icons/fa";
@@ -11,6 +12,7 @@ import { FaPhp } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { FaExternalLinkAlt } from "react-icons/fa";
 import { SiTailwindcss } from "react-icons/si";
+import { FaReact } from "react-icons/fa";
 
 const projects = [
   {
@@ -28,9 +30,27 @@ const projects = [
     js: true,
     php: true,
     tailwind: true,
+    react: false,
   },
   {
     id: 2,
+    image: gymlarious,
+    alt: "Gymlarious",
+    title: "Gymlarious",
+    subdes: "Gymlarious",
+    description:
+      "I made this as a side project. The name is Gymlarious, a vibrant fitness community that blends laughter with workouts. Welcome to Gymlarious, where every rep is a punchline, and every workout is a celebration! ",
+    github: "https://github.com/lawrencegumabon/gymlarious",
+    live: "https://lawrencegumabon.github.io/gymlarious/#/gymlarious/home",
+    html: true,
+    css: true,
+    js: true,
+    php: false,
+    tailwind: true,
+    react: true,
+  },
+  {
+    id: 3,
     image: bookLibrary,
     alt: "Book Library",
     title: "Book Library",
@@ -44,9 +64,10 @@ const projects = [
     js: true,
     php: true,
     tailwind: true,
+    react: false,
   },
   {
-    id: 3,
+    id: 4,
     image: passwordmatrix,
     alt: "Password Matrix",
     title: "Password Matrix",
@@ -60,9 +81,10 @@ const projects = [
     js: true,
     php: true,
     tailwind: true,
+    react: false,
   },
   {
-    id: 4,
+    id: 5,
     image: portfolio,
     alt: "portfolio",
     title: "Portfolio",
@@ -75,9 +97,10 @@ const projects = [
     js: true,
     php: false,
     tailwind: false,
+    react: false,
   },
   {
-    id: 5,
+    id: 6,
     image: ecommerce,
     alt: "E-Commerce",
     title: "E-Commerce",
@@ -92,6 +115,7 @@ const projects = [
     js: true,
     php: false,
     tailwind: true,
+    react: false,
   },
 ];
 
@@ -162,6 +186,11 @@ const ProjectLists = () => {
                 {project.js && (
                   <p className=" bg-gray-300 w-12 h-12 flex justify-center items-center rounded-full">
                     <FaJs className="text-3xl" />
+                  </p>
+                )}
+                {project.react && (
+                  <p className=" bg-gray-300 w-12 h-12 flex justify-center items-center rounded-full">
+                    <FaReact className="text-3xl" />
                   </p>
                 )}
                 {project.php && (
