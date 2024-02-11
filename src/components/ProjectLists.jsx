@@ -23,7 +23,7 @@ const projects = [
     subdes: "Motorcycle rental system (On-going)",
     description:
       "A system where you can post your own motorbike and let the user rent it.",
-    github: "https://github.com/lawrencegumabon/wheeltech",
+    github: "https://github.com/lwrncgmbn/wheeltech",
     live: "",
     html: true,
     css: true,
@@ -40,8 +40,8 @@ const projects = [
     subdes: "Gymlarious",
     description:
       "I made this as a side project. The name is Gymlarious, a vibrant fitness community that blends laughter with workouts. Welcome to Gymlarious, where every rep is a punchline, and every workout is a celebration! ",
-    github: "https://github.com/lawrencegumabon/gymlarious",
-    live: "https://lawrencegumabon.github.io/gymlarious/#/gymlarious/home",
+    github: "https://github.com/lwrncgmbn/gymlarious",
+    live: "https://lwrncgmbn.github.io/gymlarious/#/home",
     html: true,
     css: true,
     js: true,
@@ -57,7 +57,7 @@ const projects = [
     subdes: "Book library system",
     description:
       "This is a school project website where you can add books and upload files as an admin, and users can access it.",
-    github: "https://github.com/lawrencegumabon/bookLibrary",
+    github: "https://github.com/lwrncgmbn/bookLibrary",
     live: "",
     html: true,
     css: true,
@@ -74,7 +74,7 @@ const projects = [
     subdes: "Password Matrix",
     description:
       "It's a website where you can register accounts and encrypt their passwords.",
-    github: "https://github.com/lawrencegumabon/passwordmatrix",
+    github: "https://github.com/lwrncgmbn/passwordmatrix",
     live: "",
     html: true,
     css: true,
@@ -90,7 +90,7 @@ const projects = [
     title: "Portfolio",
     subdes: "Portfolio",
     description: "I created this portfolio in 2022 as a school project.",
-    github: "https://github.com/lawrencegumabon/portfolio-project",
+    github: "https://github.com/lwrncgmbn/portfolio-project",
     live: "https://lawrence-project.netlify.app/",
     html: true,
     css: true,
@@ -108,7 +108,7 @@ const projects = [
     description:
       "I challenged myself to recreate this design from the frontend mentor challenge with working buttons.",
     github:
-      "https://github.com/lawrencegumabon/frontend-mentor/tree/main/ecommerce-product-page-main",
+      "https://github.com/lwrncgmbn/frontend-mentor/tree/main/ecommerce-product-page-main",
     live: "https://ecommerce-product-page-49ceea.netlify.app/",
     html: true,
     css: true,

@@ -26,7 +26,7 @@ const Home = () => {
               </a>
             </li>
             <li className="hover:scale-105 duration-300">
-              <a href="https://github.com/lawrencegumabon" target="_blank">
+              <a href="https://github.com/lwrncgmbn" target="_blank">
                 <FaGithub className="hover:text-[#24292e]" />
               </a>
             </li>
