@@ -15,4 +15,6 @@ Technologies:
 - React Scroll
 - Getform
 -----
-Live Server: [Click here](https://lawrencegumabon.netlify.app/)
+Live Server: [Click here](https://lwrncgmbn.github.io/portfolio/)
+
+
