@@ -1,6 +1,6 @@
 import React from "react";
 import portfolio from "../assets/images/portfolio.png";
-import wheeltech from "../assets/images/wheeltech.png";
+import wheeltech from "../assets/images/wheeltech-landing-page.png";
 import passwordmatrix from "../assets/images/passwordmatrix.png";
 import bookLibrary from "../assets/images/bookLibrary.png";
 import ecommerce from "../assets/images/e-commerce.png";
@@ -66,23 +66,23 @@ const projects = [
     tailwind: true,
     react: false,
   },
-  {
-    id: 4,
-    image: passwordmatrix,
-    alt: "Password Matrix",
-    title: "Password Matrix",
-    subdes: "Password Matrix",
-    description:
-      "It's a website where you can register accounts and encrypt their passwords.",
-    github: "https://github.com/lwrncgmbn/passwordmatrix",
-    live: "",
-    html: true,
-    css: true,
-    js: true,
-    php: true,
-    tailwind: true,
-    react: false,
-  },
+  // {
+  //   id: 4,
+  //   image: passwordmatrix,
+  //   alt: "Password Matrix",
+  //   title: "Password Matrix",
+  //   subdes: "Password Matrix",
+  //   description:
+  //     "It's a website where you can register accounts and encrypt their passwords.",
+  //   github: "https://github.com/lwrncgmbn/passwordmatrix",
+  //   live: "",
+  //   html: true,
+  //   css: true,
+  //   js: true,
+  //   php: true,
+  //   tailwind: true,
+  //   react: false,
+  // },
   {
     id: 5,
     image: portfolio,
@@ -128,7 +128,7 @@ const ProjectLists = () => {
           className="w-full  flex flex-col  md:flex-row md:even:flex-row-reverse justify-between my-6 gap-6"
         >
           {/* IMAGE */}
-          <div className=" bg-dark-0 w-full max-h-96 rounded-md p-4 group cursor-pointer overflow-hidden shadow-md">
+          <div className=" bg-[#303030] w-full max-h-96 rounded-md p-4 group cursor-pointer overflow-hidden shadow-md">
             <img
               src={project.image}
               alt=""
