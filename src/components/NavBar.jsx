@@ -16,7 +16,7 @@ const NavBar = () => {
         </h1>
       </Link>
       {/* FOR DESKTOP VIEW MENU */}
-      <ul className="hidden sm:flex items-center gap-4 cursor-pointer text-lg font-semibold">
+      <ul className="hidden sm:flex items-center gap-8 cursor-pointer text-base font-semibold">
         <li>
           <Link to="home" smooth={true} offset={0} duration={500}>
             <span className="flex items-center gap-2 hover:scale-105 duration-300">
@@ -61,7 +61,7 @@ const NavBar = () => {
         className={
           !nav
             ? "hidden"
-            : "absolute inset-0 bg-light-0 flex flex-col justify-center items-center text-2xl gap-4 h-screen sm:hidden cursor-pointer"
+            : "absolute inset-0 bg-light-0 flex flex-col justify-center items-center text-lg gap-4 h-screen sm:hidden cursor-pointer"
         }
       >
         <li>
