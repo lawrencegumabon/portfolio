@@ -5,14 +5,14 @@ const Skills = () => {
   return (
     <div
       name="skills"
-      className="w-full min-h-screen h-full flex justify-center items-center px-4"
+      className="flex items-center justify-center w-full h-full min-h-screen px-4"
     >
-      <div className="flex flex-col justify-center max-w-7xl w-full">
-        <p className="text-5xl font-bold  text-left">Skills.</p>
+      <div className="flex flex-col justify-center w-full max-w-7xl">
+        <p className="text-5xl font-bold text-left">Skills.</p>
         {/* PROJECTS */}
         <p>Technologies and Tools</p>
-        <div className="w-full flex justify-center">
-          <div className="py-6 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-8 place-items-center max-w-4xl">
+        <div className="flex justify-center w-full">
+          <div className="grid max-w-4xl grid-cols-1 gap-8 py-6 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4 place-items-center">
             {/* LISTS */}
             <SkillLists />
           </div>

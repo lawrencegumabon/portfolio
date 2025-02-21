@@ -7,7 +7,7 @@
 @layer components {
   #contactMe {
     position: relative;
-    animation: shake 600ms infinite ease-in-out;
+    animation: shake 700ms infinite ease-in-out;
   }
 
   @keyframes shake {

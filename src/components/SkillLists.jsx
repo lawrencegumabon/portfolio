@@ -9,6 +9,7 @@ import { FaGithub } from "react-icons/fa";
 import { TbBrandVscode } from "react-icons/tb";
 import { PiFigmaLogoFill } from "react-icons/pi";
 import { SiAdobephotoshop } from "react-icons/si";
+import { FaReact } from "react-icons/fa";
 
 const skills = [
   {
@@ -38,26 +39,31 @@ const skills = [
   },
   {
     id: 6,
+    name: "React",
+    logo: <FaReact />,
+  },
+  {
+    id: 7,
     name: "MySQL",
     logo: <GrMysql />,
   },
   {
-    id: 7,
+    id: 8,
     name: "GitHub",
     logo: <FaGithub />,
   },
   {
-    id: 8,
+    id: 9,
     name: "VS Code",
     logo: <TbBrandVscode />,
   },
   {
-    id: 9,
+    id: 10,
     name: "Figma",
     logo: <PiFigmaLogoFill />,
   },
   {
-    id: 10,
+    id: 11,
     name: "Photoshop",
     logo: <SiAdobephotoshop />,
   },
@@ -69,10 +75,10 @@ const SkillLists = () => {
       {skills.map((skill) => (
         <div
           key={skill.id}
-          className="bg-gray-300 p-4 w-40 h-40 flex flex-col justify-center items-center rounded-md shadow-md"
+          className="flex flex-col items-center justify-center w-40 h-40 p-4 bg-gray-300 rounded-md shadow-md"
         >
           <span className="text-7xl">{skill.logo}</span>
-          <span className="font-bold text-lg pt-2 text-center">
+          <span className="pt-2 text-lg font-bold text-center">
             {skill.name}
           </span>
         </div>

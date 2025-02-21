@@ -9,17 +9,17 @@ const NavBar = () => {
   const handleClick = () => showNav(!nav);
 
   return (
-    <div className="flex items-center justify-between py-6 px-8  fixed top-0 left-0 right-0 text-base md:text-lg backdrop-blur-sm">
+    <div className="fixed top-0 left-0 right-0 flex items-center justify-between px-4 py-6 text-base md:text-lg backdrop-blur-sm">
       <Link to="home" smooth={true} offset={0} duration={500}>
-        <h1 className="text-lg font-semibold z-10 cursor-pointer">
+        <h1 className="z-10 text-lg font-semibold cursor-pointer">
           Lawrence Gumabon
         </h1>
       </Link>
       {/* FOR DESKTOP VIEW MENU */}
-      <ul className="hidden sm:flex items-center gap-8 cursor-pointer text-base font-semibold">
+      <ul className="items-center hidden gap-8 text-base font-semibold cursor-pointer sm:flex">
         <li>
           <Link to="home" smooth={true} offset={0} duration={500}>
-            <span className="flex items-center gap-2 hover:scale-105 duration-300">
+            <span className="flex items-center gap-2 duration-300 hover:scale-105">
               {" "}
               Home
             </span>
@@ -27,21 +27,21 @@ const NavBar = () => {
         </li>
         <li>
           <Link to="projects" smooth={true} offset={-80} duration={500}>
-            <span className="flex items-center gap-2 hover:scale-105 duration-300">
+            <span className="flex items-center gap-2 duration-300 hover:scale-105">
               Projects
             </span>
           </Link>
         </li>
         <li>
           <Link to="skills" smooth={true} duration={500}>
-            <span className="flex items-center gap-2 hover:scale-105 duration-300">
+            <span className="flex items-center gap-2 duration-300 hover:scale-105">
               Skills
             </span>
           </Link>
         </li>
         <li>
           <Link to="contacts" smooth={true} duration={500}>
-            <span className="flex items-center gap-2 hover:scale-105 duration-300">
+            <span className="flex items-center gap-2 duration-300 hover:scale-105">
               Contacts
             </span>
           </Link>
@@ -52,7 +52,7 @@ const NavBar = () => {
       </ul>
 
       {/* BURGER */}
-      <div onClick={handleClick} className="sm:hidden z-10 cursor-pointer">
+      <div onClick={handleClick} className="z-10 cursor-pointer sm:hidden">
         {!nav ? <FaBars /> : <FaTimes />}
       </div>
 

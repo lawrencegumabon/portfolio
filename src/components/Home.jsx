@@ -9,15 +9,17 @@ const Home = () => {
   return (
     <div
       name="home"
-      className="w-full min-h-screen flex justify-center items-center px-2"
+      className="flex items-center justify-center w-full min-h-screen px-8"
     >
-      <div className="flex justify-evenly items-center max-w-7xl w-full">
+      <div className="flex items-center w-full justify-evenly max-w-7xl">
         {/* LEFT SIDE */}
-        <div>
+        <div className="flex flex-col items-center md:items-start">
           <p className="text-4xl md:text-6xl">Hello, I am</p>
-          <p className="text-4xl md:text-6xl font-semibold">Lawrence Gumabon</p>
-          <ul className="flex gap-4 text-4xl md:text-5xl mt-6">
-            <li className="hover:scale-105 duration-300">
+          <p className="text-4xl font-semibold text-center md:text-start md:text-6xl">
+            Lawrence Gumabon
+          </p>
+          <ul className="flex gap-4 mt-6 text-4xl md:text-5xl">
+            <li className="duration-300 hover:scale-105">
               <a
                 href="https://www.linkedin.com/in/lawrence-gumabon-7018b7255/"
                 target="_blank"
@@ -25,12 +27,12 @@ const Home = () => {
                 <FaLinkedin className="hover:text-primary-0" />
               </a>
             </li>
-            <li className="hover:scale-105 duration-300">
+            <li className="duration-300 hover:scale-105">
               <a href="https://github.com/lwrncgmbn" target="_blank">
                 <FaGithub className="hover:text-[#24292e]" />
               </a>
             </li>
-            <li className="hover:scale-105 duration-300">
+            <li className="duration-300 hover:scale-105">
               <a href="https://www.facebook.com/lwrncgmbn/" target="_blank">
                 <FaFacebook className="hover:text-primary-0" />
               </a>
@@ -39,9 +41,9 @@ const Home = () => {
         </div>
         {/* RIGHT SIDE */}
         <div className="relative hidden md:block">
-          <div id="contactMe" className=" cursor-pointer">
+          <div id="contactMe" className="cursor-pointer ">
             <Link to="contacts" smooth={true} duration={500}>
-              <div className="absolute bg-primary-0 text-white p-2 font-bold md:text-lg px-4 rounded-full -top-20 left-20  ">
+              <div className="absolute p-2 px-4 font-bold text-white rounded-full bg-primary-0 md:text-lg -top-20 left-20 ">
                 CONTACT ME
               </div>
               <div
@@ -56,7 +58,7 @@ const Home = () => {
           <img
             src={Profile}
             alt="Image"
-            className="w-72 hover:rotate-6 duration-300"
+            className="duration-300 w-72 hover:rotate-6"
           />
         </div>
       </div>
